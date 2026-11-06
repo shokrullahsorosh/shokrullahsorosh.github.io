@@ -1,0 +1,50 @@
+:root{--navy:#10243E;--teal:#2EC4B6;--teald:#0E8077;--ink:#1E2A38;--gray:#5F6E7D;--rule:#D9E1E8;--light:#D6E0EA}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Lato,Calibri,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55;font-size:16px;display:flex;min-height:100vh}
+a{color:var(--teald)}
+.side{width:340px;flex:0 0 340px;background:var(--navy);color:#F2F6FA;padding:36px 28px;border-right:5px solid var(--teal);position:sticky;top:0;height:100vh;overflow-y:auto;font-size:14px}
+.side a{color:#fff}
+.mono{width:84px;height:84px;border-radius:50%;background:#1B3A5F;border:4px solid var(--teal);display:flex;align-items:center;justify-content:center;font:700 32px Merriweather,serif;color:#fff;margin-bottom:8px}
+.side h2{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);border-bottom:1px solid #2C4A6B;padding-bottom:6px;margin:26px 0 10px}
+.side p{margin:0 0 4px}
+.label{font-size:10px;letter-spacing:.15em;text-transform:uppercase;font-weight:700;color:var(--teal);margin-top:10px!important}
+.skill h4{margin:12px 0 4px;color:#fff;font-size:14px}
+.skill ul{margin:0;padding-left:16px;color:var(--light);font-size:13px}
+.skill li::marker{color:var(--teal)}
+.edu{display:flex;flex-direction:column;margin-bottom:12px}
+.edu strong{color:#fff}
+.edu .dates{color:var(--teal);font-weight:700;font-size:12px}
+.edu .small{font-size:12px;color:var(--light)}
+.btn{display:inline-block;margin-top:14px;background:var(--teal);color:var(--navy)!important;font-weight:700;padding:9px 16px;border-radius:6px;text-decoration:none}
+.btn:hover{background:#fff}
+main{flex:1;padding:40px 56px 40px 52px;max-width:960px}
+h1{font:900 clamp(34px,5vw,56px)/1.02 Lato,sans-serif;letter-spacing:.03em;text-transform:uppercase;margin:0;color:var(--navy)}
+h1 span{display:block;color:var(--teald)}
+.role{font-weight:700;letter-spacing:.25em;text-transform:uppercase;margin:12px 0 2px}
+.fields{color:var(--gray);margin:0 0 6px;padding-bottom:10px;border-bottom:4px solid var(--teal)}
+section{margin-top:8px}
+section h2{font-size:15px;letter-spacing:.2em;text-transform:uppercase;color:var(--navy);margin:30px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--rule)}
+section h2::before{content:'';display:inline-block;width:9px;height:9px;background:var(--teal);margin-right:10px}
+section h2 small{font:italic 400 12px Lato;letter-spacing:0;text-transform:none;color:var(--gray)}
+blockquote{margin:14px 0 0;padding-left:14px;border-left:5px solid var(--teal);font:italic 16px/1.55 Merriweather,serif;color:var(--navy)}
+.job{margin-bottom:18px}
+.row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.job h3{margin:0;font-size:17px;color:var(--navy)}
+.dates{color:var(--teald);font-weight:700;font-size:14px}
+.sub{color:var(--gray);font-style:italic;font-size:14px}
+.project h4{margin:14px 0 2px;color:var(--teald)}
+.project .site{font:400 13px Lato;color:var(--gray)}
+main ul{margin:4px 0;padding-left:20px}
+main li::marker{color:var(--teal)}
+.course{margin:4px 0;font-size:15px}
+.course b{color:var(--teald)}
+.course span{color:var(--gray);font-size:13px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.small{font-size:13px;color:var(--gray)}
+.pubs{padding-left:44px}
+.pubs li{margin-bottom:10px;font-size:14px;padding-left:6px}
+.pubs li::marker{color:var(--teald);font:700 14px Merriweather,serif}
+footer{margin-top:40px;padding-top:14px;border-top:1px solid var(--rule);font-size:13px;color:var(--gray)}
+@media(max-width:860px){body{display:block}.side{position:static;width:auto;height:auto;border-right:0;border-bottom:5px solid var(--teal)}main{padding:28px 20px}.two{grid-template-columns:1fr}}
+@media print{.side{position:static;height:auto}.btn{display:none}body{display:block}}
